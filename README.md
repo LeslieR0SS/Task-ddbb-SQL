@@ -94,13 +94,15 @@ DELETE FROM Passatger WHERE ID="Z23456K";
     Using a subquery.
     Find all cities with flight departures from the company Iberia.
 
-**Before**
 
 ```mysql
-
+SELECT Ciutat FROM Aeroport WHERE NomAeroport IN (SELECT NomAerOrigen FROM Vol WHERE NomCo = "Iberia");
 ```
 
 **After**
+
+
+![5-after](https://user-images.githubusercontent.com/91556932/168114720-c427c316-a202-44d3-b18e-14219811b256.png)
 
 
 ### Task 6
@@ -111,7 +113,10 @@ DELETE FROM Passatger WHERE ID="Z23456K";
 **Before**
 
 ```mysql
+SELECT MAX(Arrivals.CountArrivals) AS 'MaxCountArrivals' FROM (SELECT COUNT(NomAerDesti) AS 'CountArrivals' FROM Vol GROUP BY NomAerDesti) Arrivals;
 ```
 
 **After**
+
+![6](https://user-images.githubusercontent.com/91556932/168115045-b5d3b12c-7e91-484f-a6bb-ced71a475119.png)
 

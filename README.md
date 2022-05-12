@@ -2,6 +2,12 @@
 
 ## How to create the db for this task using the shell:
 
+```shell
+mysql -u leslie -p #to acces to mysql account
+CREATE DATABASE vols; #to create the db
+SHOW DATABASES; #To show all the ddbb
+```
+
 ![database](https://user-images.githubusercontent.com/91556932/167886717-054e72c9-311a-4fe4-9dbf-bef3e4cb821c.png)
 ![show_tables](https://user-images.githubusercontent.com/91556932/168091163-17d5652f-c64a-4e60-a352-ccb0ec35affc.png)
 
@@ -15,6 +21,14 @@ After changing the values of any table perform a Select from all the table value
 
     The flight with number 222 has suffered a delay.
     Change its Dia to 15/10/2009.
+    
+'''
+UPDATE Vol SET Dia="2009-10-15" WHERE NumVol=222;
+'''
+    
+![1-updateBefore](https://user-images.githubusercontent.com/91556932/168100964-abe3b4dd-9ddc-41cd-83b5-bd246ab9a0d8.png)
+
+![1-updateAfter](https://user-images.githubusercontent.com/91556932/168100990-7c194f27-73af-44e5-8073-c5997cb2f04c.png)
 
 ### Task 2
 

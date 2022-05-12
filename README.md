@@ -22,7 +22,7 @@ After changing the values of any table perform a Select from all the table value
     The flight with number 222 has suffered a delay.
     Change its Dia to 15/10/2009.
     
-```shell
+```mysql
 UPDATE Vol SET Dia="2009-10-15" WHERE NumVol=222;
 ```
     
@@ -40,9 +40,12 @@ UPDATE Vol SET Dia="2009-10-15" WHERE NumVol=222;
 ![2-before](https://user-images.githubusercontent.com/91556932/168103163-24f399c4-ad6a-4ec6-ab39-e6bcbd8b807c.png)
 ![2-before2](https://user-images.githubusercontent.com/91556932/168103173-2a278dab-cb28-443e-8549-504f472d740e.png)
 
-```shell
+```mysql
 UPDDATE Vol SET Capacitat="128", NomCo="Air France" WHERE NumVol=999;
 ```
+
+**After**
+
 ![2-after](https://user-images.githubusercontent.com/91556932/168106982-bf385337-e0cc-493a-866c-0c91f31d1d32.png)
 ![2-result](https://user-images.githubusercontent.com/91556932/168106995-f5918c93-13b0-4a32-85af-5dd975b2ff0c.png)
 
@@ -53,17 +56,55 @@ UPDDATE Vol SET Capacitat="128", NomCo="Air France" WHERE NumVol=999;
     Flight 666 has been canceled.
     Remove it from the database.
 
+**Before**
+
+![3](https://user-images.githubusercontent.com/91556932/168107547-d9c1fea5-5c4b-406c-abdd-8e79f4dcf927.png)
+
+```mysql
+DELETE * FROM Vol WHERE NumVol=666;
+
+```
+
+**After**
+
+![3-after2](https://user-images.githubusercontent.com/91556932/168108299-73cf8f02-c990-430e-9518-20d9d75faa1f.png)
+
+
 ### Task 4
 
     The user with ID Z23456K has asked us to remove all of it's data.
     Remove the user from the database.
+    
+**Before**
+
+```mysql
+```
+
+**After**
+
 
 ### Task 5
 
     Using a subquery.
     Find all cities with flight departures from the company Iberia.
 
+**Before**
+
+```mysql
+```
+
+**After**
+
+
 ### Task 6
 
     Using a subquery.
     Find the maximum amount of arrivals in a single airport.
+    
+**Before**
+
+```mysql
+```
+
+**After**
+

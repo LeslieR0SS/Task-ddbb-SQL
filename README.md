@@ -41,7 +41,7 @@ UPDATE Vol SET Dia="2009-10-15" WHERE NumVol=222;
 ![2-before2](https://user-images.githubusercontent.com/91556932/168103173-2a278dab-cb28-443e-8549-504f472d740e.png)
 
 ```mysql
-UPDDATE Vol SET Capacitat="128", NomCo="Air France" WHERE NumVol=999;
+UPDATE Vol SET Capacitat="128", NomCo="Air France" WHERE NumVol=999;
 ```
 
 **After**
@@ -91,9 +91,11 @@ DELETE * FROM Vol WHERE NumVol=666;
 **Before**
 
 ```mysql
+DELETE FROM Passatger WHERE ID="Z23456K";
 ```
 
 **After**
+![4-after](https://user-images.githubusercontent.com/91556932/168111552-d2f3fc91-55d7-448c-82c1-36ed36c2a233.png)
 
 
 ### Task 6

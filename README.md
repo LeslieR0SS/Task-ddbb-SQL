@@ -34,6 +34,18 @@ UPDATE Vol SET Dia="2009-10-15" WHERE NumVol=222;
 
     The plane for flight 999 has been changed, the new one has 128 seats and is from the company Air France.
     Set its new values.
+    
+**Before**
+![2-before](https://user-images.githubusercontent.com/91556932/168103163-24f399c4-ad6a-4ec6-ab39-e6bcbd8b807c.png)
+![2-before2](https://user-images.githubusercontent.com/91556932/168103173-2a278dab-cb28-443e-8549-504f472d740e.png)
+
+```shell
+UPDDATE Vol SET Capacitat="128", NomCo="Air France" WHERE NumVol=999;
+```
+![2-after](https://user-images.githubusercontent.com/91556932/168106982-bf385337-e0cc-493a-866c-0c91f31d1d32.png)
+![2-result](https://user-images.githubusercontent.com/91556932/168106995-f5918c93-13b0-4a32-85af-5dd975b2ff0c.png)
+
+
 
 ### Task 3
 

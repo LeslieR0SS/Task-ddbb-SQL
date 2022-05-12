@@ -36,6 +36,7 @@ UPDATE Vol SET Dia="2009-10-15" WHERE NumVol=222;
     Set its new values.
     
 **Before**
+
 ![2-before](https://user-images.githubusercontent.com/91556932/168103163-24f399c4-ad6a-4ec6-ab39-e6bcbd8b807c.png)
 ![2-before2](https://user-images.githubusercontent.com/91556932/168103173-2a278dab-cb28-443e-8549-504f472d740e.png)
 

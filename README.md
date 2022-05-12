@@ -22,9 +22,9 @@ After changing the values of any table perform a Select from all the table value
     The flight with number 222 has suffered a delay.
     Change its Dia to 15/10/2009.
     
-'''
+```shell
 UPDATE Vol SET Dia="2009-10-15" WHERE NumVol=222;
-'''
+```
     
 ![1-updateBefore](https://user-images.githubusercontent.com/91556932/168100964-abe3b4dd-9ddc-41cd-83b5-bd246ab9a0d8.png)
 

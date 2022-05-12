@@ -77,11 +77,14 @@ DELETE * FROM Vol WHERE NumVol=666;
     
 **Before**
 
+![4-before](https://user-images.githubusercontent.com/91556932/168112216-dd5928fc-d8b5-4d7d-ac6c-342df844cfea.png)
+
 ```mysql
 DELETE FROM Passatger WHERE ID="Z23456K";
 ```
 
 **After**
+
 ![4-after](https://user-images.githubusercontent.com/91556932/168111552-d2f3fc91-55d7-448c-82c1-36ed36c2a233.png)
 
 
